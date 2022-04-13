@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    <title>PGhub Free</title>
+</head>
+<body id="body">
+    <header id="header" class="container">
+        <a href="#"><img src="/img/logopghubfree.svg" alt="" srcset=""></a>
+    </header>
+    <main class="container" id="main">
+        <h1>Pesquisar repositórios de maneira fácil</h1>
+        <h2>Informaçoes públicas de repositórios GitHub de maneira rápida e fácil</h2>
+            <form class="box-search container">
+                <input type="search" id="field-src" placeholder="Procurar por usuário..." value="">
+                <button class="button-src" id="button-src" onclick="getValue(event)" type="submit"></button>
+            </form>
+    </main>
+
+    <section id="user-info" class="container">
+        <h2>Informações do Perfil</h2>
+       <div class="card-content">
+           <div class="card-img">
+             <img id="userAvatar" src="./img/no-image.jpg" alt="">
+           </div>
+           <div class="card-info">
+                <ul>
+                    <li><p class="p-description">Nome:</p><p id="userLogin"></p></li>
+                    <li><p class="p-description">ID: </p><p id="userID"></p></li>
+                    <li><p class="p-description">Tipo de Usuario: </p><p id="userType"></p></li>
+                    <li><p class="p-description">Empresa: </p><p id="userCompany"></p></li>
+                    <li><a href="" id="userUrl" target="_blank" rel="noopener noreferrer">view on GitHub</a></li>
+                </ul>
+           </div>
+       </div>
+    </section>
+
+    <section id="repo-info" class="container">
+        <h2>Repositórios Públicos</h2>
+        <div class="cards">
+        </div>
+    </section>
+    <footer class="footer container">
+        <img src="./img/logo-footer.svg" alt="" srcset="">
+        <p>Alguns direitos reservados</p>
+    </footer>
+    
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

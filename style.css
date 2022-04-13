@@ -1,0 +1,316 @@
+:root{
+    --dark-gray: #2E3743;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: #F0F3F7;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--dark-gray);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: min(90vw, 1200px);
+    margin: auto;
+}
+
+
+#header {
+    margin-top: 40px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+/*Main*/
+
+#main h1, h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#main h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+#main h2 {
+    font-weight: normal;
+    font-size:1.5rem;
+}
+
+.box-search{
+    width: 60%;
+    background: #fff;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.box-search input {
+    width: calc(100% - 42px);
+    outline: 0;
+    border: 0;
+    padding: .8rem;
+}
+
+.box-search button {
+    padding: 1px;
+    width: 42px;
+    height: 41px;
+    background-image: url(./img/search-button.svg);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.box-search button:hover{
+    background-image: url(./img/search-hover.svg);
+}
+
+/* user-Cards */
+
+
+.card-content {
+    max-width: 620px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    justify-content: start;
+    align-items: stretch;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+}
+.p-description {
+    font-weight: bold;
+    margin-right: 5px;
+}
+#userAvatar {
+    max-width: 225px;
+    max-height: 220px;
+    margin-right: 20px;
+}
+
+#user-info h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.card-info ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.card-info ul li{
+    padding: 10px;
+}
+
+.card-info ul li p{
+    display: inline-block;
+}
+.card-info ul li:first-child{
+    padding-top: 0;
+}
+
+#userUrl {
+    color: #1177FF;
+}
+
+#userUrl:hover{
+    color: #003DB2;
+}
+
+/* repositorios */
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#repo-info{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card-repo {
+    margin-top: 40px;
+    background: #fff;
+    max-width: 380px;
+    height: 240px;
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-repo ul{
+    height: 200px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repoLinkName{
+    color: #1177FF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1rem;
+}
+
+.repoLinkName:hover{
+    color: #003DB2;
+}
+
+.repoDescript{
+    font-weight: lighter;
+    color: #606B7A;
+    overflow-x: hidden;
+    height: 38px;
+}
+
+.repoTech{
+    color: #2E3743;
+    font-weight: 500;
+}
+
+.card-repo ul li:last-child{
+    align-self: flex-end;
+}
+
+.repoLink {    
+    font-weight: lighter;
+    color: #606B7A;
+}
+
+.repoLink strong {
+    color: #FF5311;
+}
+
+/*Footer */
+
+.footer {
+    text-align: center;
+    margin-top: 80px;
+}
+.footer p{
+    color: #A3AFBE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+/* responsivo  */
+
+
+
+@media (max-width: 450px) {
+    .box-search {
+        width: 100%;
+    }
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-img {
+        align-self: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .card-repo {
+        max-width: 340px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 452px) and (max-width: 768px) {
+    .box-search {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 1070px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .card-repo {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 628px) {
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-img {
+        align-self: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .card-repo {
+        width: 420px;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 460px){
+    .box-search {
+        width: 100%;
+    }
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-img {
+        align-self: center;
+    }
+
+    .card-repo {
+        width: 360px;
+        max-width: 100%;
+    }
+}

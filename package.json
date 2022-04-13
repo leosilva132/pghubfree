@@ -1,0 +1,15 @@
+{
+  "name": "pghubfree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "Leandro Silva",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
