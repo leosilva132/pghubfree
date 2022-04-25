@@ -150,6 +150,9 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
+.reposTitle{
+    margin-bottom: 20px;
+}
 
 #repo-info{
     margin-top: 60px;
@@ -207,6 +210,17 @@ a{
 
 .repoLink strong {
     color: #FF5311;
+}
+
+.reposTotal {
+    color: #2e3743c4;
+    font-weight: normal;
+}
+
+.cards h2{
+    margin-top: 40px;
+    grid-column: 2;
+    color:#2e374346; 
 }
 
 /*Footer */

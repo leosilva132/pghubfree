@@ -18,8 +18,8 @@ function getUser(userName){
         } else {
             userCompany.textContent = data.company
         }
-        
         userUrl.href = data.html_url
+        repoTotal.textContent = `Repositórios públicos encontrados: ${data.public_repos}`
     })
     .catch(error => console.error(error))
 }
