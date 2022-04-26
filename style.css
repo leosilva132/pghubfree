@@ -1,5 +1,7 @@
 :root{
     --dark-gray: #2E3743;
+    --blue-one: #1177FF;
+    --blue-two: #003DB2;
 }
 
 * {
@@ -143,11 +145,11 @@ a{
 }
 
 #userUrl {
-    color: #1177FF;
+    color: var(--blue-one);
 }
 
 #userUrl:hover{
-    color: #003DB2;
+    color: var(--blue-two);
 }
 
 /* repositorios */
@@ -184,14 +186,10 @@ a{
 }
 
 .repoLinkName{
-    color: #1177FF;
+    color: var(--blue-one);
     text-decoration: none;
     font-weight: bold;
     font-size:1rem;
-}
-
-.repoLinkName:hover{
-    color: #003DB2;
 }
 
 .repoDescript{
@@ -217,6 +215,10 @@ a{
 
 .repoLink strong {
     color: #FF5311;
+}
+
+.repoLink strong:hover {
+    color: #e24406;
 }
 
 .reposTotal {
