@@ -107,7 +107,7 @@ const Values = {
 
 const App = {
     init(){
-        Values.getValue()
+        Values.getValue(event)
     },
 
 }
